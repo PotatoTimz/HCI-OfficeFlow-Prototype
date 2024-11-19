@@ -1,0 +1,14 @@
+html,
+body {
+  background-color: #001f2b;
+  max-height: 100%;
+}
+
+#serverDisplay {
+  padding-left: 75px;
+  background-color: #001f2b;
+}
+
+#serverName {
+  border-bottom: solid 3px white;
+}

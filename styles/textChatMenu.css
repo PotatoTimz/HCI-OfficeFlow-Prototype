@@ -1,0 +1,47 @@
+#chatMenu {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.chatMessageBox {
+  padding: 30px 0 30px 0;
+  border-top: white 1px solid;
+  display: flex;
+  flex-direction: row;
+}
+
+.chatProfileImage {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid white;
+}
+
+.chatProfileImage:hover {
+  border: 3px solid lightblue;
+}
+
+.chatMessageInfo {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 20px;
+}
+
+.chatProfileName {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+
+.chatProfileMessage {
+}
+
+#createMessageBox {
+  padding: 5;
+  width: 100%;
+  background-color: white;
+}

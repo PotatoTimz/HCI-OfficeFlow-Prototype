@@ -1,0 +1,43 @@
+/* Sidebar */
+.serverSidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 75px;
+  background-color: #009bd6;
+  z-index: 600;
+}
+
+.serverSidebar > div:first-of-type {
+  border-bottom: 3px white solid;
+  font-size: 13px;
+  background-color: #00719c;
+}
+
+.serverSidebar > div:nth-of-type(2) {
+  background-color: #00719c;
+  border-bottom: 3px white solid;
+}
+
+.serverSidebar > div:nth-of-type(3) {
+  border-bottom: 3px white solid;
+  padding: 12px 0 12px 0;
+  font-size: 13px;
+}
+
+.serverSidebar > div {
+  padding: 12px 0 12px 0;
+}
+
+.serverSidebarIcon {
+  width: 75%;
+  height: 50%;
+  border-radius: 50%;
+  background-color: white;
+  border: 3px solid white;
+}
+
+.serverSidebarIcon:hover {
+  border-color: lightblue;
+}

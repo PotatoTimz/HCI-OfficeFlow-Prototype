@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Office Flow</title>
+        <link rel="stylesheet" href="styles/serverSelectorSideBar.css">
+        <link rel="stylesheet" href="styles/serverFunction.css">
+        <link rel="stylesheet" href="styles/chatSidebar.css">
+        <link rel="stylesheet" href="styles/textChatMenu.css">
+        <link rel="stylesheet" href="styles/voiceChatMenu.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav
+                id="serverSidebar"
+                class="d-lg-block serverSidebar d-flex flex-column">
+                <div class="text-center fw-medium text-white">Office Flow</div>
+                <div class="text-center">
+                    <img alt="profile image" class="serverSidebarIcon"
+                        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" />
+                </div>
+                <div class="text-center fw-medium text-white">Servers</div>
+                <div class="text-center">
+                    <img alt="profile image" class="serverSidebarIcon"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRMD2k5BDToWJMfopu53HA9z5DpSf5HiiMCw&s" />
+                </div>
+                <div class="text-center">
+                    <img alt="profile image" class="serverSidebarIcon"
+                        src="https://cdn-icons-png.freepik.com/256/16180/16180067.png?semt=ais_hybrid" />
+                </div>
+                <div class="text-center">
+                    <img alt="profile image" class="serverSidebarIcon"
+                        src="https://ourhappycorner.com/wp-content/uploads/2024/04/Groupme-black-and-white-icon.png" />
+                </div>
+                <div class="text-center">
+                    <img alt="profile image" class="serverSidebarIcon"
+                        src="https://i.pinimg.com/236x/45/5a/e6/455ae61ccabb393e5503ff8688dcaa61.jpg" />
+                </div>
+            </nav>
+            <div class="row" id="serverDisplay">
+                <div class="col-2 chatSidebar d-flex flex-column">
+                    <div class="row">
+                        <div class="text-white fs-4 fw-bold py-3">
+                            Select a
+                            functionality
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-white text-center py-2"
+                            id="memberList">Member
+                            List</div>
+                    </div>
+                    <div
+                        class="row text-white fs-4 fw-medium pt-3 px-2 justify-content-center">
+                        <div>Task Manager
+                        </div>
+                        <div class="col-10">
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bricks" viewBox="0 0 16 16">
+                                <path d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5zM3 4v2h4.5V4zm5.5 0v2H13V4zM3 10v2h4.5v-2zm5.5 0v2H13v-2zM1 1v2h3.5V1zm4.5 0v2h5V1zm6 0v2H15V1zM1 7v2h3.5V7zm4.5 0v2h5V7zm6 0v2H15V7zM1 13v2h3.5v-2zm4.5 0v2h5v-2zm6 0v2H15v-2z"/>
+                              </svg>  Task-A-Manager</span>
+                            </div>
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bricks" viewBox="0 0 16 16">
+                                <path d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5zM3 4v2h4.5V4zm5.5 0v2H13V4zM3 10v2h4.5v-2zm5.5 0v2H13v-2zM1 1v2h3.5V1zm4.5 0v2h5V1zm6 0v2H15V1zM1 7v2h3.5V7zm4.5 0v2h5V7zm6 0v2H15V7zM1 13v2h3.5v-2zm4.5 0v2h5v-2zm6 0v2H15v-2z"/>
+                              </svg>  Task-B-Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="row text-white fs-4 fw-medium pt-3 px-2 justify-content-center">
+                        <div>Text Chats</div>
+                        <div class="col-10">
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                              </svg>  Team-A-Text-Chat</span>
+                            </div>
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                              </svg>  Team-B-Text-Chat</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="row text-white fs-4 fw-medium pt-3 px-2 justify-content-center">
+                        <div>Voice Chats</div>
+                        <div class="col-10">
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                                <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z"/>
+                              </svg>  Team-A-Text-Chat</span>
+                            </div>
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-megaphone" viewBox="0 0 16 16">
+                                <path d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0v-.214c-2.162-1.241-4.49-1.843-6.912-2.083l.405 2.712A1 1 0 0 1 5.51 15.1h-.548a1 1 0 0 1-.916-.599l-1.85-3.49-.202-.003A2.014 2.014 0 0 1 0 9V7a2.02 2.02 0 0 1 1.992-2.013 75 75 0 0 0 2.483-.075c3.043-.154 6.148-.849 8.525-2.199zm1 0v11a.5.5 0 0 0 1 0v-11a.5.5 0 0 0-1 0m-1 1.35c-2.344 1.205-5.209 1.842-8 2.033v4.233q.27.015.537.036c2.568.189 5.093.744 7.463 1.993zm-9 6.215v-4.13a95 95 0 0 1-1.992.052A1.02 1.02 0 0 0 1 7v2c0 .55.448 1.002 1.006 1.009A61 61 0 0 1 4 10.065m-.657.975 1.609 3.037.01.024h.548l-.002-.014-.443-2.966a68 68 0 0 0-1.722-.082z"/>
+                              </svg>  Team-B-Text-Chat</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="row text-white fs-4 fw-medium pt-3 px-2 justify-content-center">
+                        <div>VR Chats</div>
+                        <div class="col-10">
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset-vr" viewBox="0 0 16 16">
+                                <path d="M8 1.248c1.857 0 3.526.641 4.65 1.794a5 5 0 0 1 2.518 1.09C13.907 1.482 11.295 0 8 0 4.75 0 2.12 1.48.844 4.122a5 5 0 0 1 2.289-1.047C4.236 1.872 5.974 1.248 8 1.248"/>
+                                <path d="M12 12a4 4 0 0 1-2.786-1.13l-.002-.002a1.6 1.6 0 0 0-.276-.167A2.2 2.2 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.6 1.6 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8"/>
+                              </svg>  Team-A-Text-Chat</span>
+                            </div>
+                            <div class="row fs-5 serverName"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-headset-vr" viewBox="0 0 16 16">
+                                <path d="M8 1.248c1.857 0 3.526.641 4.65 1.794a5 5 0 0 1 2.518 1.09C13.907 1.482 11.295 0 8 0 4.75 0 2.12 1.48.844 4.122a5 5 0 0 1 2.289-1.047C4.236 1.872 5.974 1.248 8 1.248"/>
+                                <path d="M12 12a4 4 0 0 1-2.786-1.13l-.002-.002a1.6 1.6 0 0 0-.276-.167A2.2 2.2 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.6 1.6 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8"/>
+                              </svg>  Team-B-Text-Chat</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col function d-flex flex-column">
+                    <div class="row" id="serverName">
+                        <div
+                            class="text-white fs-4 fw-bold py-3">Empty
+                            Box Server
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="text-white py-2"
+                            id="memberList"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
+                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325"/>
+                              </svg> Team-A-Text-Chat</span>
+                        </div>                    
+                    </div>
+                    <div class="row" id="chatMenu">
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Alex Newman</div>
+                                <div class="chatProfileMessage">Hey everyone,
+                                    just wanted to check in about the progress
+                                    on the new project timeline. How’s
+                                    everything going?</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Jordan Smith</div>
+                                <div class="chatProfileMessage">Hey Alex, I’ve
+                                    finished my part on the research, just need
+                                    to finalize a few things before I can pass
+                                    it over to Taylor. Should be ready by the
+                                    end of the day.</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Taylor Joy</div>
+                                <div class="chatProfileMessage">Got it, Jordan!
+                                    I’ll start drafting the presentation as soon
+                                    as I have that. I’ll aim to have a first
+                                    draft by tomorrow morning. Does that
+                                    work?</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Alex Newman</div>
+                                <div class="chatProfileMessage">Perfect, sounds
+                                    good! Just make sure we’re all aligned
+                                    before the meeting with the client on
+                                    Thursday.</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Jordan Smith</div>
+                                <div class="chatProfileMessage">ep, I’ll
+                                    double-check the research notes to make sure
+                                    we’re on the same page with the latest
+                                    data.</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Taylor Joy</div>
+                                <div class="chatProfileMessage">I’ll make sure
+                                    the presentation reflects that, and we’ll do
+                                    a quick internal review Wednesday afternoon.
+                                    How’s that for timing?</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Alex Newman</div>
+                                <div class="chatProfileMessage">Great plan!
+                                    Let’s aim to have everything wrapped up by
+                                    Wednesday so we have time for feedback
+                                    before the client meeting. Thanks,
+                                    everyone!</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Jordan Smith</div>
+                                <div class="chatProfileMessage">Sounds good,
+                                    I’ll keep you updated on the research.
+                                    Thanks!</div>
+                            </div>
+                        </div>
+                        <div class="text-white chatMessageBox px-4">
+                            <img
+                                class="chatProfileImage"
+                                src="https://www.svgrepo.com/show/384674/account-avatar-profile-user-11.svg" />
+                            <div class="chatMessageInfo">
+                                <div class="chatProfileName">Taylor Joy</div>
+                                <div class="chatProfileMessage">Thanks, all!
+                                    Looking forward to seeing everything come
+                                    together. 😊</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-white chatMessageBox px-4">
+                            <input id="createMessageBox" type="textbox" placeholder="Send a message"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
