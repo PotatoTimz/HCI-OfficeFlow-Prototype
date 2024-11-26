@@ -1,0 +1,28 @@
+#taskManagerMenu {
+  height: 100%;
+}
+
+#taskInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#taskChart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.taskCard {
+  width: 200px;
+  background: #b9e5fe;
+}
+
+input[type="checkbox"] {
+  -ms-transform: scale(2);
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  padding: 10px;
+}

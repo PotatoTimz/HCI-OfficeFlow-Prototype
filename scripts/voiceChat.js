@@ -44,6 +44,7 @@ const generateVoiceCall = () => {
 };
 
 voiceChatButton1.on("click", () => {
+  console.log("test");
   disableAllPanels();
   voiceChat.removeClass("toggleOff");
 

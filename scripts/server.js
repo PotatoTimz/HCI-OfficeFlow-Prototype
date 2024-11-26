@@ -4,6 +4,8 @@ const chatName = $("#chatName");
 // function panel
 const textChat = $("#textChat");
 const voiceChat = $("#voiceChatMenu");
+const taskManagerMenu = $("#taskManagerMenu");
+const vrChat = $("#vrMenu");
 
 const taskManagerIcon = `<svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +46,8 @@ const vrChatIcon = `<svg
 const disableAllPanels = () => {
   textChat.addClass("toggleOff");
   voiceChat.addClass("toggleOff");
+  taskManagerMenu.addClass("toggleOff");
+  vrChat.addClass("toggleOff");
 };
 
 const generateChatName = (type, serverName) => {

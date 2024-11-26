@@ -136,20 +136,20 @@ textChatButton1.on("click", () => {
   disableAllPanels();
   textChat.removeClass("toggleOff");
 
-  const generatedchatHTML = generateTextChat(textChatMessages1);
-  const generatedchatName = generateChatName("text", "Team-A-Text-Chat");
+  const generatedChatHTML = generateTextChat(textChatMessages1);
+  const generatedChatName = generateChatName("text", "Team-A-Text-Chat");
 
-  chatMenu.html(generatedchatHTML);
-  chatName.html(generatedchatName);
+  chatMenu.html(generatedChatHTML);
+  chatName.html(generatedChatName);
 });
 
 textChatButton2.on("click", () => {
   disableAllPanels();
   textChat.removeClass("toggleOff");
 
-  const generatedchatHTML = generateTextChat(textChatMessages2);
-  const generatedchatName = generateChatName("text", "Team-B-Text-Chat");
+  const generatedChatHTML = generateTextChat(textChatMessages2);
+  const generatedChatName = generateChatName("text", "Team-B-Text-Chat");
 
-  chatMenu.html(generatedchatHTML);
-  chatName.html(generatedchatName);
+  chatMenu.html(generatedChatHTML);
+  chatName.html(generatedChatName);
 });

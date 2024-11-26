@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="styles/chatSidebar.css">
         <link rel="stylesheet" href="styles/textChatMenu.css">
         <link rel="stylesheet" href="styles/voiceChatMenu.css">
+        <link rel="stylesheet" href="styles/taskManager.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
@@ -68,7 +69,8 @@
                         <div>Task Manager
                         </div>
                         <div class="col-10">
-                            <div class="row fs-5 serverName"><span><svg
+                            <div class="row fs-5 serverName"
+                                id="taskManager1"><span><svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16" height="16"
                                         fill="currentColor" class="bi bi-bricks"
@@ -77,7 +79,8 @@
                                             d="M0 .5A.5.5 0 0 1 .5 0h15a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H14v2h1.5a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-3a.5.5 0 0 1 .5-.5H2v-2H.5a.5.5 0 0 1-.5-.5v-3A.5.5 0 0 1 .5 6H2V4H.5a.5.5 0 0 1-.5-.5zM3 4v2h4.5V4zm5.5 0v2H13V4zM3 10v2h4.5v-2zm5.5 0v2H13v-2zM1 1v2h3.5V1zm4.5 0v2h5V1zm6 0v2H15V1zM1 7v2h3.5V7zm4.5 0v2h5V7zm6 0v2H15V7zM1 13v2h3.5v-2zm4.5 0v2h5v-2zm6 0v2H15v-2z" />
                                     </svg> Task-A-Manager</span>
                             </div>
-                            <div class="row fs-5 serverName"><span><svg
+                            <div class="row fs-5 serverName"
+                                id="taskManager2"><span><svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16" height="16"
                                         fill="currentColor" class="bi bi-bricks"
@@ -147,7 +150,8 @@
                         class="row text-white fs-4 fw-medium pt-3 px-2 justify-content-center">
                         <div>VR Chats</div>
                         <div class="col-10">
-                            <div class="row fs-5 serverName"><span><svg
+                            <div class="row fs-5 serverName"
+                                id="vrChat1"><span><svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16" height="16"
                                         fill="currentColor"
@@ -159,7 +163,8 @@
                                             d="M12 12a4 4 0 0 1-2.786-1.13l-.002-.002a1.6 1.6 0 0 0-.276-.167A2.2 2.2 0 0 0 8 10.5c-.414 0-.729.103-.935.201a1.6 1.6 0 0 0-.277.167l-.002.002A4 4 0 1 1 4 4h8a4 4 0 0 1 0 8" />
                                     </svg> Team-A-VR-Chat</span>
                             </div>
-                            <div class="row fs-5 serverName"><span><svg
+                            <div class="row fs-5 serverName"
+                                id="vrChat2"><span><svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         width="16" height="16"
                                         fill="currentColor"
@@ -207,7 +212,7 @@
                 <div class="row toggleOff" id="voiceChatMenu">
                     <div id="callerSection">
                     </div>
-                    <div id="section2" class="text-center">
+                    <div id="section2" class="text-center pt-2">
                         <button class="btn btn-success p-3 rounded-circle"
                             title="Join Call">
                             <svg xmlns="http://www.w3.org/2000/svg"
@@ -242,11 +247,60 @@
                         </button>
                     </div>
                 </div>
+                <div class="row toggleOff" id="taskManagerMenu">
+                    <div class="col">
+                        <div id="taskInfo" class="pt-4 pb-2 px-4 border-bottom">
+                            <div
+                                class="fs-3 text-white text-center">
+                                <span class="fw-bold">Member Name:</span>
+                                Daniel Cook
+                            </div>
+                            <div
+                                class="fs-3 text-white text-center">
+                                <span class="fw-bold">Deadline:</span>
+                                01-01-2025
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                class="text-center fs-1 fw-bold text-white mt-2 mb-4">Tasks</div>
+                            <div id="taskChart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row toggleOff" id="vrMenu">
+                    <div class="col">
+                        <div
+                            class="fs-2 text-center text-white fw-medium my-3">Ready
+                            to Enter the
+                            VR Workspace?</div>
+                        <div class="fs-6 text-center text-white">Please make
+                            sure that you have your VR heaset connected for
+                            seemless transition. If your VR device is not dected
+                            you may not enter the space.</div>
+                    </div>
+                    <div class="row px-5 py-5">
+                        <div class="col-8">
+                            <img class="img-fluid"
+                                src="https://www.appliedglobal.com/wp-content/uploads/How-to-Create-a-Modern-Meeting-Room-Setup.png">
+                        </div>
+                        <div class="col">
+                            <div class="row">
+                                <button
+                                    class="btn btn-success align-middle">Enter
+                                    Room</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
     </body>
     <script src="scripts/textChat.js"></script>
     <script src="scripts/voiceChat.js"></script>
+    <script src="scripts/taskManager.js"></script>
+    <script src="scripts/vrChat.js"></script>
     <script src="scripts/server.js"></script>
 </html>
