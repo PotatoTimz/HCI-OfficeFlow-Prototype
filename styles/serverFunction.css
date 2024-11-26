@@ -12,3 +12,11 @@ body {
 #serverName {
   border-bottom: solid 3px white;
 }
+
+#chatName {
+  border-bottom: solid 3px white;
+}
+
+.toggleOff {
+  display: none !important;
+}

@@ -1,0 +1,39 @@
+#voiceChatMenu {
+  display: grid;
+  height: 100%;
+  grid-template-rows: 90% 10%;
+  grid-template-columns: 100%;
+}
+
+#callerSection {
+  padding: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
+}
+
+.caller {
+  background-color: #dddddd;
+  height: 75%;
+  width: 75%;
+}
+
+.callerImg {
+  height: 100%;
+  width: 100%;
+  border: 5px solid gray;
+}
+
+.toggleButton {
+  height: 20px;
+}
+
+.callerOptions {
+  background-color: #bccbcf;
+  border: 3px solid grey;
+}
+
+#section2 {
+  background-color: #6a8fb3;
+}

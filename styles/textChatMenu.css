@@ -1,8 +1,13 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 #chatMenu {
   display: flex;
-  height: 100%;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
+  height: 80vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: scroll;
 }
 
 .chatMessageBox {
