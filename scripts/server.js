@@ -81,15 +81,14 @@ $(document).ready(function () {
   servers.on("click", function () {
       const serverId = $(this).attr("id");
 
-      // Hide the server display first
+      // Hide the server display first and reset hidden elements
       serverDisplay.addClass("toggleOff");
+      $("#taskManager2, #textChat2, #voiceChat2").show(); // Reset all hidden elements
 
-      // Check which server is clicked and modify the display accordingly
+      // Logic for each server
       if (serverId === "server1") {
           // Server 1: Full features
           serverDisplay.removeClass("toggleOff");
-          $("#taskManager2").show(); // Ensure Task-B-Manager is visible
-          $("#textChat2").show();    // Ensure Team-B-Text-Chat is visible
           console.log("Server 1 selected: Showing all features");
       } else if (serverId === "server2") {
           // Server 2: Reduced features
@@ -97,8 +96,13 @@ $(document).ready(function () {
           $("#taskManager2").hide(); // Hide Task-B-Manager
           $("#textChat2").hide();    // Hide Team-B-Text-Chat
           console.log("Server 2 selected: Reduced features");
+      } else if (serverId === "server3") {
+          // Server 3: Further reduced features
+          serverDisplay.removeClass("toggleOff");
+          $("#taskManager2").hide(); // Hide Task-B-Manager
+          $("#textChat2").hide();    // Hide Team-B-Text-Chat
+          $("#voiceChat2").hide();   // Hide Team-B-Voice-Chat
+          console.log("Server 3 selected: Further reduced features");
       }
   });
 });
-
-
