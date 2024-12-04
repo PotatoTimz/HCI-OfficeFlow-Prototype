@@ -41,3 +41,20 @@
 .serverSidebarIcon:hover {
   border-color: lightblue;
 }
+
+
+#logoutButton {
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-size: 14px;
+  color: white;
+  background-color: #d9534f;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#logoutButton:hover {
+  background-color: #c9302c;
+}

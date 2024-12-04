@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/serverFunction.css">
+    <link rel="stylesheet" href="styles/chatSidebar.css">
+    <link rel="stylesheet" href="styles/taskManager.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+
+    <div class="back-arrow">
+        <a href="main.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M15.54 20.27L8.73 13.5a1.5 1.5 0 0 1 0-2.1l6.81-6.77a1.5 1.5 0 1 1 2.12 2.12L11.82 12l5.84 5.85a1.5 1.5 0 1 1-2.12 2.12z"/>
+            </svg>
+        </a>
+    </div>
+    
+    <div class="container">
+        <div class="profile-container">
+            <h1 class="text-white text-center">Edit Profile</h1>
+            <div class="profile-section">
+                <!-- Profile Picture -->
+                <div class="profile-item">
+                    <label class="text-white">Profile Picture:</label>
+                    <div class="profile-pic-container">
+                        <img id="profile-pic" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="Profile Picture" class="profile-pic">
+                        <input type="file" id="profile-pic-input" accept="image/*">
+                    </div>
+                </div>
+                <!-- Name -->
+                <div class="profile-item">
+                    <label class="text-white">Name:</label>
+                    <input type="text" id="profile-name" class="form-control" placeholder="Enter your name">
+                </div>
+                <!-- Description -->
+                <div class="profile-item">
+                    <label class="text-white">Description:</label>
+                    <textarea id="profile-desc" class="form-control" rows="3" placeholder="Write something about yourself"></textarea>
+                </div>
+                <!-- Status -->
+                <div class="profile-item">
+                    <label class="text-white">Status:</label>
+                    <select id="profile-status" class="form-control">
+                        <option value="online">Online</option>
+                        <option value="away">Away</option>
+                        <option value="invisible">Invisible</option>
+                    </select>
+                </div>
+                <!-- Save Changes -->
+                <div class="profile-item">
+                    <button id="save-profile" class="btn btn-success">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/profile.js"></script>
+</body>
+</html>

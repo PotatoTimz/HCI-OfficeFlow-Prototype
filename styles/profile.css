@@ -1,0 +1,40 @@
+.profile-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2c728d;
+    border-radius: 10px;
+}
+
+.profile-section {
+    margin: 20px;
+}
+
+.profile-item {
+    margin-bottom: 15px;
+}
+
+.profile-pic-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+}

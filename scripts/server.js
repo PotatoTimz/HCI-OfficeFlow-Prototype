@@ -64,3 +64,9 @@ const generateChatName = (type, serverName) => {
 
   return chatName;
 };
+
+// Logout Button Click Handler
+$("#logoutButton").on("click", () => {
+  window.location.href = "login.html";
+});
+
