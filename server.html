@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server Selection</title>
-    <link rel="stylesheet" href="styles/serverSelectorSideBar.css">
+    <title>Profile</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/serverFunction.css">
+    <link rel="stylesheet" href="styles/chatSidebar.css">
+    <link rel="stylesheet" href="styles/taskManager.css">
+    <link rel="stylesheet" href="styles/server.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div id="serverSidebar" class="serverSidebar">
-            <div class="text-center fw-medium text-white">Select a Server</div>
-            <div class="text-center">
-                <img alt="Server 1" class="serverSidebarIcon" src="https://example.com/server1.png">
-            </div>
-            <div class="text-center">
-                <img alt="Server 2" class="serverSidebarIcon" src="https://example.com/server2.png">
-            </div>
-            <div class="text-center">
-                <img alt="Server 3" class="serverSidebarIcon" src="https://example.com/server3.png">
-            </div>
-        </div>
-        <div id="serverDisplay" class="row">
-            <div class="col text-center">
-                <h1 class="text-white py-4">Server Information</h1>
-                <p class="text-white">Select a server from the sidebar to view details.</p>
-            </div>
-        </div>
+
+    <div class="back-arrow">
+        <a href="main.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 24 24">
+                <path d="M15.54 20.27L8.73 13.5a1.5 1.5 0 0 1 0-2.1l6.81-6.77a1.5 1.5 0 1 1 2.12 2.12L11.82 12l5.84 5.85a1.5 1.5 0 1 1-2.12 2.12z"/>
+            </svg>
+        </a>
     </div>
+    
+    
+
     <script src="scripts/server.js"></script>
 </body>
 </html>
