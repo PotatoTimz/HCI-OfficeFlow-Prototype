@@ -70,3 +70,35 @@ $("#logoutButton").on("click", () => {
   window.location.href = "login.html";
 });
 
+$(document).ready(function () {
+  const servers = $(".serverSidebarIcon");
+  const serverDisplay = $("#serverDisplay");
+
+  // Initially hide the server display
+  serverDisplay.addClass("toggleOff");
+
+  // Event listener for server icons
+  servers.on("click", function () {
+      const serverId = $(this).attr("id");
+
+      // Hide the server display first
+      serverDisplay.addClass("toggleOff");
+
+      // Check which server is clicked and modify the display accordingly
+      if (serverId === "server1") {
+          // Server 1: Full features
+          serverDisplay.removeClass("toggleOff");
+          $("#taskManager2").show(); // Ensure Task-B-Manager is visible
+          $("#textChat2").show();    // Ensure Team-B-Text-Chat is visible
+          console.log("Server 1 selected: Showing all features");
+      } else if (serverId === "server2") {
+          // Server 2: Reduced features
+          serverDisplay.removeClass("toggleOff");
+          $("#taskManager2").hide(); // Hide Task-B-Manager
+          $("#textChat2").hide();    // Hide Team-B-Text-Chat
+          console.log("Server 2 selected: Reduced features");
+      }
+  });
+});
+
+
